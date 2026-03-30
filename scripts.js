@@ -44,7 +44,8 @@ const pickRandom = (array, items) => {
 }
 
 const generateGame = () => {
-    const dimensions = selectors.board.getAttribute('data-dimension')  
+    //const dimensions = selectors.board.getAttribute('data-dimension') 
+    const dimensions = document.getElementById('dimension'); 
 
     if (dimensions % 2 !== 0) {
         throw new Error("The dimension of the board must be an even number.")
